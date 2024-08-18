@@ -1,6 +1,6 @@
 # Decodificador do Brasil Colonial
 
-Bem-vindo(a) ao projeto **Decodificação Histórica do Brasil Colonial**! Este repositório contém uma página web educacional interativa criada para ajudar alunos a explorar o período colonial do Brasil por meio de atividades de decodificação de mensagens criptografadas.
+Bem-vindo(a) ao projeto **Decodificar do Brasil Colonial**! Este repositório contém uma página web educacional interativa criada para ajudar alunos a explorar o período colonial do Brasil por meio de atividades de decodificação de mensagens criptografadas.
 
 ## 📚 Sobre o Projeto
 
