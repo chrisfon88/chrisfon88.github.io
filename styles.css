@@ -39,6 +39,7 @@ body {
 .cabecalho__menu {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 40px;
 }
 
@@ -218,6 +219,15 @@ body {
 }
 
 @media (max-width: 768px) {
+    .cabecalho__menu {
+        gap: 10px; /* Diminui ainda mais o espaçamento em telas menores */
+    }
+
+    .cabecalho__menu__link {
+        font-size: 16px; /* Diminui o tamanho da fonte em telas menores */
+        padding: 8px;
+    }
+    
     .conteudo__criptografia, .conteudo__resultado {
         width: 100%;
     }
