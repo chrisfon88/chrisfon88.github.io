@@ -219,6 +219,11 @@ font-size: 1rem;
 font-weight: 400;
 }
 
+.rodape__link {
+    text-decoration: none;
+    color: var(--cor_terciaria);
+}
+
 @media (max-width: 768px) {
     .cabecalho__menu {
         gap: 10px; /* Diminui ainda mais o espaçamento em telas menores */
