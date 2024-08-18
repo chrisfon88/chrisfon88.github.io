@@ -208,23 +208,7 @@ body {
     color: var(--cor_secundaria);
 }
 
-.rodape__home {
-    background-color: var(--cor_secundaria);
-    color: var(--cor_terciaria);
-    text-align: center;
-    padding: 10px 0;
-    width: 100%;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    font-family: var(--fonte_principal);
-    font-size: 1rem;
-    font-weight: 400;
-}
-
-
-.rodape__geral {
+.rodape {
 background-color: var(--cor_secundaria);
 color: var(--cor_terciaria);
 text-align: center;
