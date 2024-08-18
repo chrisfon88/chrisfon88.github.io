@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Decodificador de Texto</title>
+</head>
+<body>
+    <header class="cabecalho">
+        <nav class="cabecalho__menu">
+                <a class="cabecalho__menu__link" href="index.html">Home</a>
+                <a class="cabecalho__menu__link" href="student.html">A(o) Aluno(a)</a>
+                <a class="cabecalho__menu__link" href="groups.html">Grupos</a>
+                <a class="cabecalho__menu__link" href="teacher.html">A(o) Professor(a)</a>
+        </nav>
+    </header>
+
+    <main class="conteudo">
+        <section class="conteudo__criptografia">
+            <h1 class="conteudo__boas-vindas"> Olá! Pode me chamar de <strong class="conteudo__boas-vindas__destaque">Sherlock</strong> ! <strong class="conteudo__boas-vindas__destaque">Sherlock Gomes</strong> !</h1>
+            <h1 class="conteudo__boas-vindas"> Lhe dou as boas-vindas ao mundo da Decodificação!</h1>
+            <p class="conteudo__paragrafo"></p>
+            <p class="conteudo__paragrafo">Você está prestes a embarcar em uma viagem no tempo, de volta ao Brasil Colonial, onde mistérios e segredos aguardam para serem desvendados. Nesta missão, você precisará decodificar mensagens criptografadas que guardam pistas sobre figuras e eventos que marcaram a cultura deste período.</p>
+            <p class="conteudo__paragrafo">Cada código que você decifrar será uma chave para abrir as portas do passado. Prepare-se para explorar, pesquisar e revelar as histórias escondidas que moldaram o Brasil. Boa sorte na sua jornada investigativa!</p>
+            <textarea class="conteudo__caixadetexto" id="inputText" placeholder="Digite sua mensagem aqui..." rows="5" class="conteudo__usuario"></textarea>
+            <p class="conteudo__alerta"><img src="./assets/alerta.png" alt="símbolo de alerta"> Apenas letras minúsculas e sem acento.</p>
+            <div class="conteudo__botoes">
+                <button class="conteudo__botoes__interface" id="encryptButton">Criptografar</button>
+                <button class="conteudo__botoes__interface" id="decryptButton">Descriptografar</button>
+            </div>
+        </section>
+        <section class="conteudo__resultado" id="rightSection">
+            <div id="initialMessage">
+                <img src="./assets/Sherlock.png" alt="Sherlock Holmes com a imagem do Zumbi dos Palmares">
+                <h2 class="conteudo__resultado__texto">Nenhuma mensagem encontrada</h2>
+                <p class="conteudo__resultado__paragrafo">Digite um texto que você deseja criptografar ou descriptografar.</p> 
+            </div>
+            <div id="resultSection" style="display: none;">
+                <img src="./assets/mensagem_criptografada.png" alt="Mensagem Criptografada">
+                <textarea class="conteudo__caixadetexto" id="outputText" placeholder="Resultado" rows="5" readonly></textarea>
+                <button class="conteudo__resultado__botaocopia" id="copyButton">Copiar para a Área de Transferência</button>
+            </div>
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <p>Desenvolvido por Christiano da Fonseca ©2024.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

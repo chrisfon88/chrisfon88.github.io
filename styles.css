@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+    --cor_principal: #F3F5FC;
+    --cor_secundaria: #0A3871;
+    --cor_terciaria: #FFFFFF;
+    --cor_quartenaria: #D8DFE8;
+    --cor_quintenaria: #3F4E61;
+    --cor_sexternaria: #395E8F;
+    --cor_septernaria: #7B5841;
+    --cor_sombra: #707070;
+
+    --fonte_principal: "Inter", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--cor_principal);
+    font-family: var(--fonte_principal);
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.cabecalho {
+    width: 100%;
+    background-color: var(--cor_secundaria);
+    padding: 1% 2%;
+}
+
+.cabecalho__menu {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.cabecalho__menu__link {
+    font-family: var(--fonte_principal);
+    color: var(--cor_terciaria);
+    text-decoration: none;
+    font-size: 1.25rem;
+}
+
+.cabecalho__menu__link:hover {
+    text-shadow: 0 4px 6px var(--cor_principal);
+}
+
+.conteudo {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2%;
+    gap: 2%;
+    box-sizing: border-box;
+    justify-content: center;
+}
+
+.conteudo__criptografia {
+    width: 65%;
+    padding: 2%;
+}
+
+.imagem-centralizada {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    max-width: 100%;
+}
+
+.conteudo__boas-vindas {
+    font-size: 1.75rem;
+    text-align: center;
+    color: var(--cor_secundaria);
+    padding: 10px 0;
+}
+
+.conteudo__boas-vindas__destaque {
+    color: var(--cor_septernaria);
+}
+
+.conteudo__grupos {
+    font-size: 1.5rem;
+    text-align: left;
+    color: var(--cor_secundaria);
+    padding: 10px 0;
+}
+
+.conteudo__paragrafo {
+    font-size: 1.12rem;
+    padding: 5px 0;
+    line-height: 1.5;
+}
+
+.conteudo__paragrafo__italico {
+    font-style: italic;
+}
+
+.conteudo__paragrafo__link {
+    text-decoration: none;
+}
+
+.conteudo__caixadetexto {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: none;
+    font-family: var(--fonte_principal);
+    font-size: 1.12rem;
+    color: var(--cor_sexternaria);
+    background-color: transparent;
+    outline: none;
+}
+
+.conteudo__caixadetexto::placeholder {
+    color: var(--cor_septernaria);
+}
+
+.conteudo__alerta {
+    color: var(--cor_secundaria);
+    font-size: 0.9rem;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.conteudo__botoes {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.conteudo__botoes__interface {
+    padding: 12px;
+    border: none;
+    border-radius: 12px;
+    background-color: var(--cor_secundaria);
+    color: var(--cor_terciaria);
+    cursor: pointer;
+    width: 48%;
+    font-size: 1rem;
+    gap: 8px;
+    box-shadow: 0 4px 6px var(--cor_sombra);
+}
+
+.conteudo__botoes__interface:hover {
+    background-color: var(--cor_quartenaria);
+    color: var(--cor_secundaria);
+}
+
+.conteudo__resultado {
+    width: 30%;
+    background-color: var(--cor_terciaria);
+    border-radius: 24px;
+    padding: 2%;
+    box-shadow: 0 4px 6px var(--cor_sombra);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.conteudo__resultado img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    display: block;
+    margin: 10px 0;
+}
+
+.conteudo__resultado__texto {
+    color: var(--cor_quintenaria);
+    font-size: 1.3rem;
+    margin-top: 10px;
+}
+
+.conteudo__resultado__paragrafo {
+    color: var(--cor_quintenaria);
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.conteudo__resultado__botaocopia {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 12px;
+    background-color: var(--cor_secundaria);
+    color: var(--cor_terciaria);
+    cursor: pointer;
+    font-size: 1rem;
+    gap: 8px;
+    box-shadow: 0 4px 6px var(--cor_sombra);
+}
+
+.conteudo__resultado__botaocopia:hover {
+    background-color: var(--cor_quartenaria);
+    color: var(--cor_secundaria);
+}
+
+.rodape {
+    background-color: var(--cor_secundaria);
+    color: var(--cor_terciaria);
+    text-align: center;
+    padding: 10px;
+    font-family: var(--fonte_principal);
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+@media (max-width: 768px) {
+    .conteudo__criptografia, .conteudo__resultado {
+        width: 100%;
+    }
+
+    .conteudo__botoes__interface {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
